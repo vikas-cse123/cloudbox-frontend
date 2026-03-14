@@ -40,7 +40,7 @@ function DirectoryView() {
   const fileInputRef = useRef(null);
 
   // Single-file upload state
-  const [uploadItem, setUploadItem] = useState(null); // { id, file, name, size, progress, isUploading }
+  const [uploadItem, setUploadItem] = useState(null); // { id, file, name, size, progress, isUploadin }
   const xhrRef = useRef(null);
 
   const [activeContextMenu, setActiveContextMenu] = useState(null);
