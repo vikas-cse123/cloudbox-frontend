@@ -40,7 +40,7 @@ function DirectoryView() {
   const fileInputRef = useRef(null);
 
   // Single-file upload state
-  const [uploadItem, setUploadItem] = useState(null); // { id, file, name, size, progress, isUploadin }
+  const [uploadItem, setUploadItem] = useState(null); 
   const xhrRef = useRef(null);
 
   const [activeContextMenu, setActiveContextMenu] = useState(null);
@@ -53,7 +53,7 @@ function DirectoryView() {
   const loadDirectory = async () => {
     try {
       const data = await getDirectoryItems(dirId);
-      setDirectoryName(dirId ? data.name : "Home");
+      setDirectoryName(dirId ? data.name : "MyHome");
       setDirectoriesList([...data.directories].reverse());
       setFilesList([...data.files].reverse());
     } catch (err) {
