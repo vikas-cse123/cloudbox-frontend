@@ -53,7 +53,7 @@ function DirectoryView() {
   const loadDirectory = async () => {
     try {
       const data = await getDirectoryItems(dirId);
-      setDirectoryName(dirId ? data.name : "app");
+      setDirectoryName(dirId ? data.name : "cloudbox");
       setDirectoriesList([...data.directories].reverse());
       setFilesList([...data.files].reverse());
     } catch (err) {
